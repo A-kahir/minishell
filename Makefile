@@ -2,7 +2,7 @@ CC = gcc
 CFLAGS = -Wall -Wextra -Werror
 NAME = minishell
 
-SRC = execution/exec.c execution/redirection.c 
+SRC = execution/exec.c execution/redirection.c utils_func/ft_close_fd.c execution/min.c
 
 OBJS = $(SRCS:.c=.o)
 

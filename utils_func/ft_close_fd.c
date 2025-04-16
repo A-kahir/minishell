@@ -1,22 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_close_fd.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: akahir <akahir@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/16 10:31:00 by yabounna          #+#    #+#             */
-/*   Updated: 2025/04/16 17:10:04 by akahir           ###   ########.fr       */
+/*   Created: 2025/04/16 17:28:37 by akahir            #+#    #+#             */
+/*   Updated: 2025/04/16 20:09:42 by akahir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include  "minishell.h"
+#include "../minishell.h"
 
-
-//dak l env khlih radi nhtajo f execution ana
-int main(int ac , char **av, char **env)
+void	ft_close_fd(int *infile, int *outfile, int pipe_fd[2])
 {
-    syntaxe_error_ac_2(ac , av);
-    execute_commands(cmds, env);
-
+	close(*infile);
+	close(*outfile);
+	close(pipe_fd[0]);
+	close(pipe_fd[1]);
 }

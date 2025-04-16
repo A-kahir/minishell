@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   syntaxe_error_0.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yabounna <yabounna@student.42.fr>          +#+  +:+       +#+        */
+/*   By: akahir <akahir@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/16 09:35:02 by yabounna          #+#    #+#             */
-/*   Updated: 2025/04/16 11:56:35 by yabounna         ###   ########.fr       */
+/*   Updated: 2025/04/16 14:28:56 by akahir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,6 +48,7 @@ void syntaxe_error_ac_3(int ac , char **av)
     }
     syntaxe_error_ac_4(ac , av);
 }
+
 void syntaxe_error_ac_4(int ac , char **av)
 {
     if (ac == 4)
