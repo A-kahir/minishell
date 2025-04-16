@@ -6,7 +6,7 @@
 /*   By: yabounna <yabounna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/16 10:31:00 by yabounna          #+#    #+#             */
-/*   Updated: 2025/04/16 10:58:06 by yabounna         ###   ########.fr       */
+/*   Updated: 2025/04/16 11:32:32 by yabounna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 int main(int ac , char **av)
 {
 
-    syntaxe_error(ac , av);
+    syntaxe_error_ac_3(ac , av);
     
     
 }

@@ -6,7 +6,7 @@
 /*   By: yabounna <yabounna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 19:44:54 by akahir            #+#    #+#             */
-/*   Updated: 2025/04/16 10:59:43 by yabounna         ###   ########.fr       */
+/*   Updated: 2025/04/16 11:56:05 by yabounna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,10 @@ typedef struct s_cmd
 } t_cmd;
 
 
+void syntaxe_error_ac_2(int ac , char **av);
+void syntaxe_error_ac_3(int ac , char **av);
+void syntaxe_error_ac_4(int ac , char **av);
 
-void syntaxe_error(int ac , char **av);
+
 
 #endif
