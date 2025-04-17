@@ -6,7 +6,7 @@
 /*   By: akahir <akahir@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 19:44:54 by akahir            #+#    #+#             */
-/*   Updated: 2025/04/17 21:15:00 by akahir           ###   ########.fr       */
+/*   Updated: 2025/04/17 22:30:34 by akahir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,7 @@ void execute_commands(t_cmd *cmds, char **env);
 //builtins functions ;
 void ft_echo(char **str);
 void ft_cd(char **str);
+void ft_pwd(char **str);
 
 //utils functions :
 void	ft_close_fd(int *infile, int *outfile, int pipe_fd[2]);
