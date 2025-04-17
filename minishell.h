@@ -6,7 +6,7 @@
 /*   By: akahir <akahir@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 19:44:54 by akahir            #+#    #+#             */
-/*   Updated: 2025/04/17 20:39:51 by akahir           ###   ########.fr       */
+/*   Updated: 2025/04/17 21:15:00 by akahir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ typedef struct s_cmd
     struct s_cmd *next;
 } t_cmd;
 
-//parsing part :
+//----------parsing part---------------
 void syntaxe_error_ac_2(int ac , char **av);
 void syntaxe_error_ac_3(int ac , char **av);
 void syntaxe_error_ac_4(int ac , char **av);
@@ -41,11 +41,15 @@ void syntaxe_error_ac_4(int ac , char **av);
 
 
 
-//execution part :
+//----------execution part-------------
 
 
 // prencipal functions :
 void execute_commands(t_cmd *cmds, char **env);
+
+//builtins functions ;
+void ft_echo(char **str);
+void ft_cd(char **str);
 
 //utils functions :
 void	ft_close_fd(int *infile, int *outfile, int pipe_fd[2]);
