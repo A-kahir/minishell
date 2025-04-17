@@ -6,7 +6,7 @@
 /*   By: akahir <akahir@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/17 17:26:10 by akahir            #+#    #+#             */
-/*   Updated: 2025/04/17 20:55:24 by akahir           ###   ########.fr       */
+/*   Updated: 2025/04/17 20:59:07 by akahir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,9 @@
 
 static int ft_check(char **str, int *i)
 {
-    int j = 1;
+    int j;
 
+    j = 1;
     if (!str[*i] || str[*i][0] != '-' || str[*i][1] != 'n')
         return (0);
     while (str[*i][j] == 'n')
@@ -30,9 +31,11 @@ static int ft_check(char **str, int *i)
 
 void ft_echo(char **str)
 {
-    int i = 1;
-    int flag = 0;
+    int i;
+    int flag;
 
+    i = 1;
+    flag = 0;
     if (str[i] && ft_strncmp(str[i], "echo", 4) == 0)
         i++;
     while (str[i] && ft_check(str, &i))
