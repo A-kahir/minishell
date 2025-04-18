@@ -1,38 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strjoin.c                                       :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: akahir <akahir@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/17 17:03:26 by akahir            #+#    #+#             */
-/*   Updated: 2025/04/18 18:22:18 by akahir           ###   ########.fr       */
+/*   Created: 2025/04/18 18:21:50 by akahir            #+#    #+#             */
+/*   Updated: 2025/04/18 18:22:28 by akahir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../minishell.h"
 
-char	*ft_strjoin(char *s1, char *s2)
+int ft_strlen(char *str)
 {
-	char	*ptr;
-	int		i;
-	int		j;
+    int i;
 
-	ptr = (char *)malloc((ft_strlen(s1) + ft_strlen(s2) + 1) * sizeof(char));
-	i = 0;
-	j = 0;
-	if (ptr == NULL)
-		return (NULL);
-	while (s1[i] != '\0')
-	{
-		ptr[i] = s1[i];
-		i++;
-	}
-	while (s2[j] != '\0')
-	{
-		ptr[i + j] = s2[j];
-		j++;
-	}
-	ptr[i + j] = '\0';
-	return (ptr);
+    i = 0;
+    while (str[i] != '\0')
+    {
+        i++;
+    }
+    return (i);
 }

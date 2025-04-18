@@ -6,7 +6,7 @@
 /*   By: akahir <akahir@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 19:44:54 by akahir            #+#    #+#             */
-/*   Updated: 2025/04/18 16:21:46 by akahir           ###   ########.fr       */
+/*   Updated: 2025/04/18 18:52:21 by akahir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,13 @@
 #include <stdio.h>
 #include <string.h>
 
+
+typedef struct s_env
+{
+    void *var;
+    void *value;
+    struct s_env *next;
+} t_env;
 
 typedef struct s_cmd
 {
@@ -51,10 +58,13 @@ void execute_commands(t_cmd *cmds, char **env);
 void ft_echo(char **str);
 void ft_cd(char **str);
 void ft_pwd(char **str);
-void ft_export(char **str);
+void ft_export(char **str, char **env);
 
 //utils functions :
 void	ft_close_fd(int *infile, int *outfile, int pipe_fd[2]);
 int	ft_strncmp(char *s1, char *s2, size_t n);
+char	*ft_strchr(const char *s, int c);
+int ft_strlen(char *str);
+t_env	*ft_lstnew(void *content);
 
 #endif
