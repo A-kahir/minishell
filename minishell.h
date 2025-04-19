@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   minishell.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: akahir <akahir@student.42.fr>              +#+  +:+       +#+        */
+/*   By: yabounna <yabounna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 19:44:54 by akahir            #+#    #+#             */
-/*   Updated: 2025/04/18 16:21:46 by akahir           ###   ########.fr       */
+/*   Updated: 2025/04/19 10:55:33 by yabounna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,10 @@
 #include <stdio.h>
 #include <string.h>
 
+
+//nos library
+# include "parsing/parsing.h"
+# include "structs.h"
 
 typedef struct s_cmd
 {

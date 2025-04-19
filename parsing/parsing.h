@@ -1,21 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_close_fd.c                                      :+:      :+:    :+:   */
+/*   parsing.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yabounna <yabounna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/16 17:28:37 by akahir            #+#    #+#             */
-/*   Updated: 2025/04/17 10:36:01 by yabounna         ###   ########.fr       */
+/*   Created: 2025/04/19 10:50:15 by yabounna          #+#    #+#             */
+/*   Updated: 2025/04/19 10:51:13 by yabounna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef PARSING_H
+#define PARSING_H
+
 #include "../minishell.h"
 
-void	ft_close_fd(int *infile, int *outfile, int pipe_fd[2])
-{
-	close(*infile);
-	close(*outfile);
-	close(pipe_fd[0]);
-	close(pipe_fd[1]);
-}
+
+
+
+#endif

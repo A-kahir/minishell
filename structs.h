@@ -1,21 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_close_fd.c                                      :+:      :+:    :+:   */
+/*   structs.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yabounna <yabounna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/16 17:28:37 by akahir            #+#    #+#             */
-/*   Updated: 2025/04/17 10:36:01 by yabounna         ###   ########.fr       */
+/*   Created: 2025/04/19 10:53:39 by yabounna          #+#    #+#             */
+/*   Updated: 2025/04/19 11:00:58 by yabounna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../minishell.h"
+#ifndef STRUCTS_H
+#define STRUCTS_H
 
-void	ft_close_fd(int *infile, int *outfile, int pipe_fd[2])
+
+
+//----------struct parsing part---------------
+
+typedef struct s_token
 {
-	close(*infile);
-	close(*outfile);
-	close(pipe_fd[0]);
-	close(pipe_fd[1]);
-}
+    char    *value;        //texte du tokens ('ls' , '|' , 'grep' ...)
+    int     type;          //type  du tokens (CMD , ARG , PIPE ...)
+    struct s_token *next;  //token suivant (list chaine)
+}   t_token;
+
+
+
+
+
+//----------struct execution part---------------
+
+
+
+
+
+#endif
